@@ -1,5 +1,21 @@
+body{
+	font-family: Lato;
+
+}
+/* HEADER */
 header {
 	background-color: #333;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+a:hover {
+	background-color: #333;
+	color: #ddd;
 }
 .navbar {
 	width: 100%;
@@ -11,7 +27,9 @@ header {
 }
 .navbar a {
 	color: #ddd;
-	text-decoration: none;
+}
+.navbar a:hover {
+	color: orange;
 }
 .nav {
 	display: flex;
@@ -22,3 +40,25 @@ header {
 .nav-item {
 	margin-right: 20px;
 }
+/* HEADER end */
+
+/* MAIN CONTENT */
+.main-container {
+	max-width: 800px;
+	margin: 0 25%;
+	letter-spacing: .02em;
+}
+
+/* MAIN CONTENT end */
+
+
+/* MEDIA QUERIES */
+@media (max-width: 640px) {
+	.logo {
+		font-size: 1.6em;;
+	}
+	.main-container {
+		margin: 15%;
+	}
+}
+/* MEDIA QUERIES end */
